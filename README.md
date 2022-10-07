@@ -16,3 +16,23 @@ How to attempt this challenge:
 4) Set your new repo as the origin: `git remote set-url origin ${your repo url}`
 5) Push your solution to your repo
 You must follow these steps for your solution to be accepted -- forks or other methods will not be considered.
+
+
+Solution
+
+//clone the branch
+git clone original-repo-url
+// go to the directory where the clone to project
+cd challenge-git
+//go to add-echo
+git checkout add-echo
+//go to add-reverse
+git checkout add-reverse
+//merge the both branch
+git rebase --onto master add-echo add-reverse
+//check the logs
+git log
+// add my repo
+git remote set-url origin my-repo-url
+// final push with solution
+git push origin master
